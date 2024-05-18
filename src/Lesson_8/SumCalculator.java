@@ -1,3 +1,5 @@
+package Lesson_8;
+
 import java.util.Arrays;
 
 public class SumCalculator {
