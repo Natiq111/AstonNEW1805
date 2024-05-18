@@ -1,4 +1,4 @@
-import Lesson_6.class1.Worker;
+package Lesson_6.class1;
 
 public class Lesson62 {
 

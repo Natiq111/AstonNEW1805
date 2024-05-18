@@ -1,4 +1,4 @@
-package Lesson_7;
+package Lesson_7.Lesson_7_2;
 
 public class Triangle extends Figure implements CalcParametrs
 {

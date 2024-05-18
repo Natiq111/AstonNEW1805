@@ -1,4 +1,4 @@
-package Lesson_7;
+package Lesson_7.Lesson_7_2;
 
 import java.lang.Math;
 
