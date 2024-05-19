@@ -3,7 +3,6 @@ package Lesson_7.Lesson_7_1;
 public class Dog extends Animal
 {
     static int count;
-    int meters;
     private String color;
     public Dog(String name, String color)
     {

@@ -3,7 +3,6 @@ package Lesson_7.Lesson_7_1;
 public class Cat extends Animal
 {
     static int count;
-    int meters;
     int hunger;
     int newfood;
     boolean satiety;

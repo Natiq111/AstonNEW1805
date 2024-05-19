@@ -16,12 +16,12 @@ public class Triangle extends Figure implements CalcParametrs
         this.footing = footing;
         this.height = height;
     }
-    public double squareFigure()
+    public double perimeterFigure()
     {
         return (sideA + sideB + sideC);
     }
 
-    public double perimeterFigure()
+    public double squareFigure()
     {
         return (footing* height) / 2;
     }
