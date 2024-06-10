@@ -7,6 +7,7 @@ public class Cat extends Animal
     int newfood;
     boolean satiety;
     String color;
+    int limitRun = 200;
 
     public Cat(String name, String color, int hunger)
     {
@@ -18,7 +19,7 @@ public class Cat extends Animal
 
     public void Run(int meters)
     {
-        if(meters > 200)
+        if(meters > limitRun)
         {
             System.out.println("Кот не может бежать дальше 200 метров");
         }
