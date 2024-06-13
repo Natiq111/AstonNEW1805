@@ -2,28 +2,27 @@ import java.util.*;
 
 public class PhoneBook {
 
-    private Map<String, String[]> phoneNumbers;
-
+    Map<String, String[]> phoneNumbers;
     public PhoneBook() {
         phoneNumbers = new HashMap<>();
     }
 
-    public void add(String lastName, String phoneNumber) {
-        if (phoneNumbers.containsKey(lastName)) {
-            
-            String[] existingNumbers = phoneNumbers.get(lastName);
-            String[] newNumbers = Arrays.copyOf(existingNumbers, existingNumbers.length + 1); 
-            
+    public void add(String name, String phoneNumber) {
+        if (phoneNumbers.containsKey(name)) {
+
+            String[] existingNumbers = phoneNumbers.get(name);
+            String[] newNumbers = Arrays.copyOf(existingNumbers, existingNumbers.length + 1);
+
             newNumbers[existingNumbers.length] = phoneNumber;
-            phoneNumbers.put(lastName, newNumbers);
+            phoneNumbers.put(name, newNumbers);
         } else {
-            
-            phoneNumbers.put(lastName, new String[]{phoneNumber});
+
+            phoneNumbers.put(name, new String[]{phoneNumber});
         }
     }
 
-    public String[] get(String lastName) {
-        return phoneNumbers.getOrDefault(lastName, new String[0]); 
+    public String[] get(String name) {
+        return phoneNumbers.getOrDefault(name, new String[0]);
     }
 
     public static void main(String[] args) {
