@@ -1,4 +1,5 @@
 import java.util.*;
+import java.util.stream.IntStream;
 
 public class Names
 {
@@ -12,13 +13,12 @@ public class Names
 
         HashMap<String, Integer> wordCounts = new HashMap<>();
 
-        for(int i = 0; i < name.length; i++)
-        {
+        IntStream.range(0, name.length).forEach(i -> {
             if (!wordCounts.containsKey(name[i]))
                 wordCounts.put(name[i], 1);
             else
                 wordCounts.put(name[i], wordCounts.get(name[i]) + 1);
-        }
+        });
 
         System.out.println("Число повторений: " + wordCounts);
     }
